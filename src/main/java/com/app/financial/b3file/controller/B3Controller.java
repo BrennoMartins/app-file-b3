@@ -14,6 +14,7 @@ import java.util.List;
 @RequestMapping("app/b3")
 public class B3Controller {
 
+    //TODO ajustar o docker
     @Autowired
     private AssetB3UseCase assetB3UseCase;
 

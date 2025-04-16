@@ -15,7 +15,8 @@ import java.util.List;
 public class InputFileDataB3 {
 
     public List<InputFileDTO> readFileDataB3() {
-        String caminhoArquivo = "src/main/resources/importB3.xlsx";
+        //String caminhoArquivo = "src/main/resources/importB3.xlsx";
+        String caminhoArquivo = "/app/resources/importB3.xlsx";
 
         try (FileInputStream fis = new FileInputStream(caminhoArquivo);
              Workbook workbook = new XSSFWorkbook(fis)) {
