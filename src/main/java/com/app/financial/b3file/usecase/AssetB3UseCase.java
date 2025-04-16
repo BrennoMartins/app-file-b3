@@ -20,7 +20,9 @@ public class AssetB3UseCase {
 
         new InputFileDataB3().readFileDataB3()
                 .forEach(a -> {
-                    lisAssetB3.add(assetB3Service.convertAssetB3(a));
+                    if(!a.getProduto().equals("")){
+                        lisAssetB3.add(assetB3Service.convertAssetB3(a));
+                    }
                 });
 
         return lisAssetB3;
