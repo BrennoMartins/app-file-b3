@@ -2,6 +2,8 @@ package com.app.financial.b3file.domain.model;
 
 import lombok.*;
 
+import java.math.BigDecimal;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -16,11 +18,12 @@ public class AssetB3 {
     private String codigoIsinDistribuicao;
     private String tipo;
     private String administrador;
-    private String quantidade;
-    private String quantidadeDisponivel;
-    private String quantidadeIndisponivel;
+    private BigDecimal quantidade;
+    private BigDecimal quantidadeDisponivel;
+    private BigDecimal quantidadeIndisponivel;
     private String motivo;
-    private String precoFechamento;
-    private String valorAtualizado;
+    private BigDecimal precoFechamento;
+    private BigDecimal valorAtualizado;
+
 
 }
